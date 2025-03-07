@@ -3,6 +3,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { Card, CardContent } from "@/components/ui/card";
 import Image from 'next/image';
+import Link from 'next/link';
 
 const caseStudies = [
   {
@@ -88,11 +89,11 @@ export default function CaseStudies() {
                         <p className="text-gray-600 mb-6 text-xs sm:text-base">
                           {study.description}
                         </p>
-                        <button 
+                        <Link href="/caseStudy" 
                           className="border text-themeColor border-themeColor px-10 py-0.5 rounded-full text-xs sm:text-sm font-medium hover:bg-themeColor duration-300 hover:text-textSecondary w-fit"
                         >
                           Explore
-                        </button>
+                        </Link>
                       </div>
                     </div>
                   </CardContent>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function KeyProducts() {
     const products = [
@@ -70,9 +71,9 @@ export default function KeyProducts() {
                 </p>
   
                 {/* Explore Button */}
-                <button className="mt-4 px-10 py-0.5 border border-themeColor duration-300 text-themeColor rounded-full hover:bg-themeColor hover:text-white transition-all">
+                <Link href="/caseStudy" className="mt-4 px-10 py-0.5 border border-themeColor duration-300 text-themeColor rounded-full hover:bg-themeColor hover:text-white transition-all">
                   Explore
-                </button>
+                </Link>
               </div>
             </div>
           ))}
