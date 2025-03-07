@@ -7,7 +7,7 @@ const Profi = () => {
       {/* Left Content */}
       <div className="lg:w-1/3 flex flex-col items-center lg:items-start  text-center lg:text-left">
       <div className="flex gap-6 mb-10 sm:mb-20 justify-center items-center ">
-      <span className="text-themeColor cursor-pointer">Case study</span><span className="cursor-pointer">Profi</span></div>
+      <span className="text-themeColor ">Case study</span><span className="">Profi</span></div>
         <h2 className="text-3xl sm:text-4xl lg:text-6xl">
         <span className="text-themeColor"> ProFi </span> AI-Powered Finance Tracking Solution     </h2>
         <p className=" text-lg mt-4 max-w-lg">

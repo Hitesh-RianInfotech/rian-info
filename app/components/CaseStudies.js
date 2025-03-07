@@ -9,7 +9,7 @@ const caseStudies = [
     title: "Tools like Billify simplify billing, inventory, and rent collection.",
     category: "Case study",
     description: "Lorem ipsum dolor sit amet consectetur. Placerat pellentesque eu sagittis vel at tortor diam dignissim ut. Cras nisi orci ullamcorper id elementum aliquam. Elit blandit ac elementum nunc proin. Nec blandit nibh mauris tincidunt mauris fames lacus sed.",
-    image: "/images/vector.png"
+    image: "/images/vector.webp"
   },
   {
     title: "Tools like Billify simplify billing, inventory, and rent collection.",

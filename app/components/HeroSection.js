@@ -9,10 +9,11 @@ export default function HeroSection() {
       {/* Background Image Placeholder */}
       <div className=" inset-0 -z-10">
         <Image
-          src="/images/vector.png"
+          src="/images/vector.webp"
           alt="Background"
-          layout="fill"
-          objectFit="cover"
+          fill
+          className="object-cover"
+          priority
           quality={100}
         />
       </div>
