@@ -37,7 +37,7 @@ export default function HeroSection() {
       <div className="mt-6 flex justify-center space-x-4">
         <Link
           href="/start-project"
-          className="bg-themeColor text-secondary px-4 sm:px-6 p-1 rounded-full sm:text-lg font-medium hover:scale-105 duration-300 transition"
+          className="bg-themeColor border-2 border-themeColor text-secondary px-4 sm:px-6 p-1 rounded-full sm:text-lg font-medium hover:scale-105 duration-300 transition"
         >
           Start your project
         </Link>

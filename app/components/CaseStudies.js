@@ -90,7 +90,7 @@ export default function CaseStudies() {
                           {study.description}
                         </p>
                         <Link href="/caseStudy" 
-                          className="border text-themeColor border-themeColor px-10 py-0.5 rounded-full text-xs sm:text-sm font-medium hover:bg-themeColor duration-300 hover:text-textSecondary w-fit"
+                          className="border text-themeColor border-themeColor px-10 py-1 rounded-full text-xs sm:text-sm font-medium hover:bg-themeColor duration-300 hover:text-textSecondary w-fit"
                         >
                           Explore
                         </Link>

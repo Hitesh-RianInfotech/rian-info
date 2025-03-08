@@ -73,7 +73,7 @@ const WhyPartner = () => {
           ))}
         </div>
         <div className="w-full mt-10 sm:mt-16 flex">
-          <button className="bg-themeColor m-auto text-sm text-secondary px-4 sm:px-16 p-1 rounded-full sm:text-lg font-medium hover:scale-105 duration-300 transition">
+          <button className="bg-themeColor m-auto text-sm text-secondary px-4 sm:px-16 p-1.5 rounded-full sm:text-lg font-medium hover:scale-105 duration-300 transition">
           Get Your Customized Plan
                     </button>
         </div>

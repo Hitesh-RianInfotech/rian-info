@@ -44,7 +44,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-16 sm:py-24 max-w-[90vw] m-auto">
+    <section id="services" className="py-10 pt-20 sm:py-24 max-w-[90vw] m-auto">
       <h2 className="text-3xl font-bold text-center mb-10">Our Services</h2>
       <div className="overflow-x-auto scrollbar-hide">
         <div className="flex my-4 gap-6">

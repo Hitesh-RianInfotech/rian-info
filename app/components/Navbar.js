@@ -88,7 +88,7 @@ export default function Navbar() {
           About
         </Link>
         <Link
-          href="/services"
+          href="/#services"
           className="hover:scale-105 duration-300"
           onClick={() => setIsOpen(false)}
         >

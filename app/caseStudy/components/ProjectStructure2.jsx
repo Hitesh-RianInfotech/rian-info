@@ -82,7 +82,7 @@ const ProjectStructure2 = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap gap-5 sm:gap-20 my-10 sm:mt-20  sm:justify-between ">
+        <div className="flex flex-wrap gap-5 sm:gap-20 my-10 mt-20  sm:justify-between ">
           <div className="flex flex-col justify-center items-start gap-4 max-w-[200px]">
             <h2 className="text-themeColor">Controllers</h2>
             <p>Manages the application's state and logic.</p>
