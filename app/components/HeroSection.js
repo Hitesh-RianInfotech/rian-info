@@ -36,13 +36,13 @@ export default function HeroSection() {
       {/* Buttons */}
       <div className="mt-6 flex justify-center space-x-4">
         <Link
-          href="/start-project"
+          href="/caseStudy"
           className="bg-themeColor border-2 border-themeColor text-secondary px-4 sm:px-6 p-1 rounded-full sm:text-lg font-medium hover:scale-105 duration-300 transition"
         >
           Start your project
         </Link>
         <Link
-          href="/our-work"
+          href="/caseStudy"
           className="border-2 text-themeColor border-themeColor px-4 sm:px-6 p-1 rounded-full sm:text-lg font-medium hover:scale-105 duration-300 transition"
         >
           View our work
