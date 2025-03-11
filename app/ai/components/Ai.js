@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Ai = () => {
   return (
-    <div className="flex flex-col bg-[url('/images/3.png')] bg-white bg-cover bg-center lg:flex-row items-center justify-between h-screen pt-32  py-16 px-6 md:pl-16">
+    <div className="flex flex-col bg-[url('/images/3.png')] bg-white bg-cover bg-center lg:flex-row items-center justify-between lg:h-screen pt-32  py-16 px-6 md:pl-16">
       {/* Left Content */}
       <div className="lg:w-1/3 text-center lg:text-left">
         <h2 className=" text-3xl sm:text-4xl lg:text-6xl">

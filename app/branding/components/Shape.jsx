@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Shape = () => {
   return (
-    <div className="flex flex-col bg-[url('/images/purple.png')] bg-white bg-cover bg-center lg:flex-row items-center justify-between h-screen pt-32  py-16 lg:pl-16">
+    <div className="flex flex-col bg-[url('/images/purple.png')] bg-white bg-cover bg-center lg:flex-row items-center justify-between lg:h-screen pt-32  py-16 lg:pl-16">
       {/* Left Content */}
       <div className=" max-w-xl text-center lg:text-left px-4">
         <h2 className=" text-3xl sm:text-4xl lg:text-6xl">

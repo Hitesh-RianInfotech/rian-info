@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const MicroSaaSSection = () => {
   return (
-    <div className="flex flex-col bg-[url('/images/2.png')]  bg-white bg-cover bg-center lg:flex-row items-center justify-between h-screen pt-32  py-16 px-6 md:px-16">
+    <div className="flex flex-col bg-[url('/images/2.png')]  bg-white bg-cover bg-center lg:flex-row items-center justify-between lg:h-screen pt-32  py-16 px-6 md:px-16">
       {/* Left Content */}
       <div className="lg:w-1/3 flex flex-col items-center lg:items-start  text-center lg:text-left">
         <h2 className="text-3xl sm:text-4xl lg:text-6xl">
