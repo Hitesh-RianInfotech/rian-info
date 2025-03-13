@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { IoSend } from "react-icons/io5";
+
 
 export default function Footer() {
   return (
@@ -20,10 +22,10 @@ export default function Footer() {
               <input 
                 type="email" 
                 placeholder="Enter your email" 
-                className="px-4 py-1 border rounded-full w-full focus:outline-none"
+                className=" pl-1 pr-4 py-1 border  rounded-xl w-full focus:outline-none"
               />
-              <button className="bg-themeColor text-white text-sm px-4 py-1 hover:scale-105 duration-300 rounded-full">
-                Subscribe
+              <button className=" text-themeColor text-2xl hover:scale-105 duration-300 rounded-full">
+              <IoSend />
               </button>
             </div>
           </div>

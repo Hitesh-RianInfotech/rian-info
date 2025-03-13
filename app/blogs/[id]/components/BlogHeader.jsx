@@ -2,12 +2,14 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { AiOutlineClockCircle, AiOutlineShareAlt } from 'react-icons/ai';
 import { BiArrowBack } from 'react-icons/bi';
 import { BsBookmark } from 'react-icons/bs';
 
 const BlogHeader = ({ blog }) => {
   // Helper function to get tag color based on index
+  
   const getTagColor = (index) => {
     const colors = [
       { bg: 'bg-[#EBE8FF]', text: 'text-[#6B4EFF]' },
@@ -17,12 +19,18 @@ const BlogHeader = ({ blog }) => {
     return colors[index % colors.length];
   };
 
+  const router = useRouter();
+   // Handle back button click
+   const handleBackClick = () => {
+    router.push('/blogs');
+  };
+
   return (
     <section className='bg-gradient-to-b from-blue-100 to-white pt-20 pb-10'>
       <div className='max-w-7xl mx-auto px-4'>
         {/* Navigation icons */}
         <div className='flex justify-between items-center mb-8'>
-          <button className='h-8 w-8 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center shadow-sm'>
+          <button onClick={handleBackClick} className='h-8 w-8 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center shadow-sm'>
             <BiArrowBack className='w-5 h-5' />
           </button>
           <div className='flex gap-2'>

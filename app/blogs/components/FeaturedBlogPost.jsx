@@ -1,5 +1,6 @@
 import { Bookmark, Share2, Clock } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const FeaturedBlogPost = () => {
   return (
@@ -25,9 +26,9 @@ const FeaturedBlogPost = () => {
         <span className="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">#Technology</span>
       </div>
       <div className="flex items-center gap-4 mt-6">
-        <button className="px-6 py-2 bg-themeColor text-white font-medium rounded-full hover:scale-105 duration-300 transition">
+        <Link href="/blogs/1" className="px-6 py-2 bg-themeColor text-white font-medium rounded-full hover:scale-105 duration-300 transition">
           Read More
-        </button>
+        </Link>
         <button className="p-3 bg-gray-100 rounded-full hover:bg-gray-200 transition">
           <Share2 className="w-5 h-5 text-gray-600" />
         </button>
