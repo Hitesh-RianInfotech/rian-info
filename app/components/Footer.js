@@ -3,18 +3,34 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className=" py-20 bg-white">
-      <div className="max-w-6xl  mx-auto px-6 flex flex-col md:flex-row justify-between items-start">
+    <footer className="py-20 bg-white">
+      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-4 items-start">
         
-        {/* Left - Logo */}
-        <div className="mb-6 md:mb-0">
-            <Image width={200} height={200} 
-                  className=" "
-                  src="/images/logo.png" alt="img" />
+        {/* Left - Logo and Email Subscription */}
+        <div className="mb-8 md:mb-0 md:max-w-xs">
+          <Image width={150} height={150} 
+                className="mb-4"
+                src="/images/logo.png" alt="img" />
+          
+          {/* Email Subscription */}
+          <div className="mt-4">
+            <h3 className="sm:text-lg font-semibold text-themeColor mb-2">Stay Updated</h3>
+            <p className="text-sm  mb-3">Subscribe to our newsletter for the latest insights and updates.</p>
+            <div className="flex flex-col sm:flex-row gap-2">
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="px-4 py-1 border rounded-full w-full focus:outline-none"
+              />
+              <button className="bg-themeColor text-white text-sm px-4 py-1 hover:scale-105 duration-300 rounded-full">
+                Subscribe
+              </button>
+            </div>
+          </div>
         </div>
 
         {/* Middle - Quick Links & Services */}
-        <div className="grid grid-cols-2 gap-10">
+        <div className="grid grid-cols-2 gap-8 mb-8 md:mb-0">
           <div>
             <h3 className="font-semibold my-3">Quick Links</h3>
             <ul className="space-y-2">
@@ -37,7 +53,7 @@ export default function Footer() {
         </div>
 
         {/* Right - Contact Info & Social Icons */}
-        <div className="text-gray-800">
+        <div className="">
           <h3 className="font-semibold my-3">Contact us</h3>
           <p>Email: info@rianinfotech.com</p>
           <p>Phone: +91-123-456-7890</p>
