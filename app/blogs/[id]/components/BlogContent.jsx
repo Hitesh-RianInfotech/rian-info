@@ -1,17 +1,29 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { AiOutlineHeart, AiOutlineLink, AiOutlineTwitter } from 'react-icons/ai';
-import { Link as ScrollLink, Element } from 'react-scroll';
+import Image from "next/image";
+import Link from "next/link";
+import {
+  AiOutlineHeart,
+  AiOutlineLink,
+  AiOutlineTwitter,
+} from "react-icons/ai";
+import { Link as ScrollLink, Element } from "react-scroll";
 
 // Blog sections definition
 const BLOG_SECTIONS = [
-  { id: 'introduction', title: 'Introduction', field: 'introduction' },
-  { id: 'ai-integration', title: '1. AI Integration in SaaS', field: 'aiIntegration' },
-  { id: 'no-code', title: '2. No-Code Solutions', field: 'noCodeSolutions' },
-  { id: 'vertical-saas', title: '3. Vertical SaaS Growth', field: 'verticalSaaS' },
-  { id: 'conclusion', title: 'Conclusion', field: 'conclusion' }
+  { id: "introduction", title: "Introduction", field: "introduction" },
+  {
+    id: "ai-integration",
+    title: "1. AI Integration in SaaS",
+    field: "aiIntegration",
+  },
+  { id: "no-code", title: "2. No-Code Solutions", field: "noCodeSolutions" },
+  {
+    id: "vertical-saas",
+    title: "3. Vertical SaaS Growth",
+    field: "verticalSaaS",
+  },
+  { id: "conclusion", title: "Conclusion", field: "conclusion" },
 ];
 
 const BlogContent = ({ blog }) => {
@@ -20,13 +32,13 @@ const BlogContent = ({ blog }) => {
   }
 
   return (
-    <div className='max-w-7xl my-10 mx-auto px-4'>
-      <div className='flex flex-col lg:flex-row gap-12'>
+    <div className="max-w-7xl my-10 mx-auto px-4">
+      <div className="flex flex-col lg:flex-row gap-12">
         {/* Table of Contents Sidebar */}
-        <aside className='w-full lg:w-64 order-2 lg:order-1'>
-          <div className='sticky top-6'>
-            <h3 className='text-lg font-semibold mb-6'>Table of Contents</h3>
-            <ul className='space-y-4 text-sm'>
+        <aside className="w-full  lg:w-64 order-2 lg:order-1">
+          <div className="sticky top-24">
+            <h3 className="text-lg font-semibold mb-6">Table of Contents</h3>
+            <ul className="space-y-4 text-sm">
               {BLOG_SECTIONS.map((section) => (
                 <li key={section.id}>
                   <ScrollLink
@@ -34,7 +46,7 @@ const BlogContent = ({ blog }) => {
                     smooth={true}
                     offset={-80}
                     duration={500}
-                    className='cursor-pointer'
+                    className="cursor-pointer"
                     activeClass="text-themeColor font-medium"
                     spy={true}
                   >
@@ -45,18 +57,20 @@ const BlogContent = ({ blog }) => {
             </ul>
 
             {/* Share buttons */}
-            <div className='mt-8'>
-              <h4 className='text-lg font-semibold mb-4'>Share this article</h4>
-              <div className='flex gap-3'>
-                {['heart', 'link', 'twitter'].map((type) => (
+            <div className="mt-8">
+              <h4 className="text-lg font-semibold mb-4">Share this article</h4>
+              <div className="flex gap-3">
+                {["heart", "link", "twitter"].map((type) => (
                   <button
                     key={type}
-                    className='p-2 rounded-full hover:bg-gray-100 transition'
+                    className="p-2 rounded-full hover:bg-gray-100 transition"
                     aria-label={`Share with ${type}`}
                   >
-                    {type === 'heart' && <AiOutlineHeart className='w-5 h-5' />}
-                    {type === 'link' && <AiOutlineLink className='w-5 h-5' />}
-                    {type === 'twitter' && <AiOutlineTwitter className='w-5 h-5' />}
+                    {type === "heart" && <AiOutlineHeart className="w-5 h-5" />}
+                    {type === "link" && <AiOutlineLink className="w-5 h-5" />}
+                    {type === "twitter" && (
+                      <AiOutlineTwitter className="w-5 h-5" />
+                    )}
                   </button>
                 ))}
               </div>
@@ -65,18 +79,18 @@ const BlogContent = ({ blog }) => {
         </aside>
 
         {/* Main Content */}
-        <article className='w-full lg:flex-1 order-1 lg:order-2 prose prose-lg max-w-none'>
+        <article className="w-full lg:flex-1 order-1 lg:order-2 prose prose-lg max-w-none ">
           {/* Sections */}
           {BLOG_SECTIONS.map((section) => (
-            <Element name={section.id} key={section.id} className='mb-12'>
-              <h2 className='text-xl sm:text-3xl font-bold mb-6'>{section.title}</h2>
-              <p className='leading-relaxed text-sm'>
-                {blog[section.field]}
-              </p>
+            <Element name={section.id} key={section.id} className="mb-12">
+              <h2 className="text-xl sm:text-3xl font-bold mb-6">
+                {section.title}
+              </h2>
+              <p className="leading-relaxed text-sm">{blog[section.field]}</p>
 
               {/* Code example for AI section */}
-              {section.id === 'ai-integration' && (
-                <div className='bg-[#1E293B] rounded-lg p-6 font-mono text-sm text-white overflow-x-auto mt-6'>
+              {section.id === "ai-integration" && (
+                <div className="bg-[#1E293B] rounded-lg p-6 font-mono text-sm text-white overflow-x-auto mt-6">
                   <pre>
                     <code>{`// Example AI Integration Code
 const aiModel = new SaaSAI({
@@ -95,23 +109,27 @@ async function processUserQuery(query) {
           ))}
 
           {/* Author Bio */}
-          <div className='mt-16 p-8 bg-white rounded-xl shadow-sm'>
-            <div className='flex flex-col sm:flex-row items-start gap-6'>
-              <div className='relative w-16 h-16 rounded-full overflow-hidden border shrink-0'>
+          <div className="mt-16 p-8 bg-white rounded-xl shadow-sm">
+            <div className="flex flex-col sm:flex-row items-start gap-6">
+              <div className="relative w-16 h-16 rounded-full overflow-hidden border shrink-0">
                 <Image
                   src={blog.authorImage}
                   alt={blog.author}
                   fill
                   sizes="64px"
-                  className='object-cover'
+                  className="object-cover"
                 />
               </div>
-              <div className='flex-1'>
-                <p className='font-semibold mb-1'>Written by {blog.author}</p>
-                <p className='font-light text-sm mb-4'>{blog.authorBio}</p>
-                <div className='flex gap-4'>
-                  <Link href="#" className='text-themeColor hover:underline'>Follow on Twitter</Link>
-                  <Link href="#" className='text-themeColor hover:underline'>Connect on LinkedIn</Link>
+              <div className="flex-1">
+                <p className="font-semibold mb-1">Written by {blog.author}</p>
+                <p className="font-light text-sm mb-4">{blog.authorBio}</p>
+                <div className="flex gap-4">
+                  <Link href="#" className="text-themeColor hover:underline">
+                    Follow on Twitter
+                  </Link>
+                  <Link href="#" className="text-themeColor hover:underline">
+                    Connect on LinkedIn
+                  </Link>
                 </div>
               </div>
             </div>

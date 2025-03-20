@@ -21,8 +21,8 @@ export default function Footer() {
             <div className="flex flex-col sm:flex-row gap-2">
               <input 
                 type="email" 
-                placeholder="Enter your email" 
-                className=" pl-1 pr-4 py-1 border  rounded-xl w-full focus:outline-none"
+                placeholder="Enter your email..." 
+                className=" pl-1 pr-4 py-1 border  rounded-md w-fit focus:outline-none"
               />
               <button className=" text-themeColor text-2xl hover:scale-105 duration-300 rounded-full">
               <IoSend />

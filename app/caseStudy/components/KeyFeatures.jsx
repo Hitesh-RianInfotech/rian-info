@@ -9,7 +9,7 @@ const features = [
       "Analyze financial trends over different time periods.",
     ],
     color: "text-[#E8A5A5]",
-    position: "absolute top-0 left-[25%]",
+    position: "absolute -top-5 left-[25%]",
     icon: "📊",
   },
   {
@@ -81,7 +81,7 @@ const features = [
 
 const KeyFeatures = () => {
   return (
-    <section className="relative py-16 overflow-hidden">
+    <section className="relative py-16 overflow-hidden bg-[url('/images/casebg.png')] bg-cover bg-center">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl font-bold flex items-start justify-start mb-10">
           <span className="mr-2">⏳</span> Key Features:
