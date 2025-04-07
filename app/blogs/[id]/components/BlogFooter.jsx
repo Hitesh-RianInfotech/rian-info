@@ -35,3 +35,5 @@ const BlogFooter = ({ posts = [] }) => {
 };
 
 export default BlogFooter;
+
+

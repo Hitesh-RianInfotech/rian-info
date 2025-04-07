@@ -22,7 +22,7 @@ const projectsData = [
       description: "Track, collect, and manage shop rents effortlessly — property management simplified.",
       image: "/images/saas.png", 
       readTime: "5",
-      url: "/blogs/6"
+      url: "/blogs/6 "
     }
 ];
 

@@ -2,9 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { AiOutlineClockCircle, AiOutlineShareAlt } from "react-icons/ai"; // Share Icon
-import { BsBookmark, BsBookmarkFill } from "react-icons/bs"; // Bookmark Icons
-import { HiOutlineViewGrid, HiOutlineViewList } from "react-icons/hi"; // View Icons
+import { AiOutlineClockCircle, AiOutlineShareAlt } from "react-icons/ai"; 
+import { HiOutlineViewGrid, HiOutlineViewList } from "react-icons/hi"; 
 
 const blogPosts = [
   {
@@ -54,7 +53,6 @@ const blogPosts = [
 const BlogList = () => {
   const [view, setView] = useState("grid");
   const [sortOption, setSortOption] = useState("Latest");
-  const [bookmarkedPosts, setBookmarkedPosts] = useState([]);
 
   // Sorting Logic
   const sortedPosts = [...blogPosts].sort((a, b) => {
@@ -63,13 +61,6 @@ const BlogList = () => {
     if (sortOption === "Popular") return b.popularity - a.popularity;
     return 0;
   });
-
-  // Bookmark Toggle
-  const toggleBookmark = (postId) => {
-    setBookmarkedPosts((prev) =>
-      prev.includes(postId) ? prev.filter((id) => id !== postId) : [...prev, postId]
-    );
-  };
 
   return (
     <div className="max-w-6xl mx-auto p-6">
@@ -139,18 +130,11 @@ const BlogList = () => {
                   <span className="text-gray-400 text-sm">{post.readTime}</span>
                 </div></div>
 
-                 {/* Bookmark & Share Icons */}
+                 {/* Share Icons */}
                  <div className="flex gap-4 absolute top-4 right-4">
                   
                   <button>
                     <AiOutlineShareAlt className="text-gray-400 hover:scale-125 duration-300 w-5 h-5" />
-                  </button>
-                  <button onClick={() => toggleBookmark(post.id)}>
-                    {bookmarkedPosts.includes(post.id) ? (
-                      <BsBookmarkFill className="text-themeColor hover:scale-110 duration-300 w-5 h-5" />
-                    ) : (
-                      <BsBookmark className="text-gray-400 w-5 h-5 hover:scale-110 duration-300" />
-                    )}
                   </button>
                 </div>
 
