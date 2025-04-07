@@ -192,7 +192,7 @@ export default function AddBlog() {
 
   return (
     <DashboardLayout>
-      <div className="max-w-3xl mx-auto pt-12">
+      <div className="max-w-4xl mx-auto rounded-md shadow-lg p-10">
         <h2 className="text-2xl font-bold mb-4">Add New Blog</h2>
         
         <form onSubmit={handleSubmit}>

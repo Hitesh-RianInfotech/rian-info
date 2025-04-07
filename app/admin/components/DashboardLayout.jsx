@@ -9,7 +9,7 @@ export default function DashboardLayout({ children }) {
   const toggleSidebar = () => setSidebarOpen((prev) => !prev);
 
   return (
-    <div className="relative flex min-h-screen bg-gray-50">
+    <div className="relative flex mt-14 bg-gray-50">
       {/* Sidebar */}
       <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
 
@@ -22,7 +22,7 @@ export default function DashboardLayout({ children }) {
       </button>
 
       {/* Main Content */}
-      <div className="flex flex-1 flex-col">
+      <div className="flex flex-1 h-[calc(100vh-55px)] overflow-y-scroll  flex-col">
         <main className="flex-1 p-6">
           {children}
         </main>
